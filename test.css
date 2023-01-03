@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500&family=Lora&display=swap');
 
-
-
+/* DESKTOP */
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
 * {
-  box-sizing: border-box;
+
 }
 
 html, body {
@@ -11,14 +11,16 @@ html, body {
   width: 100%;
   font: #000;
   background-color: #F6FBFE;
+}
+body{
   margin: 0 auto; 
-
 }
 
 header{
-height:15%;
   background-color: #263127;
 }
+
+
 nav{
   padding: 6px;
  background-color: #263127;
@@ -27,17 +29,20 @@ nav{
   position: fixed;
   width:100%;
 }
-body{
-  margin-top:0;
-}
+/* body{
+  border:200;
+} */
 .search_bar{
- background-color: #263127;
-    font-size: 24px;
-  border: none;
+  background-color: #263127;
+  font-size: 24px; 
   position: fixed;
   width:100%;
+  margin-left: 425px;
+  margin-top:auto;
+  box-sizing: inherit;
   
- 
+  
+  
 }
 h1{
   font-size:120px;
@@ -52,7 +57,7 @@ h4{
   flex-direction:rows;
     align-items: center;
   justify-content: center;
-   column-gap: 2em;
+   column-gap: 1em;
   background-color: #263127;
   font-family: 'Bebas Neue', cursive;
   color:#E4986D;
@@ -65,17 +70,18 @@ h4{
 
 .blurb_grid{
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 60% 40%;
   grid-template-rows: auto;
-  max-width:1000px;
-   margin-left:150px;
+  max-width:1280px;
+   padding: 20px;
+   margin: 0 auto;
 }
 
 .blurb{
   max-width: 600px;
   padding: 20px;
    margin-left:50px;
- 
+ border-style: solid;
   
   
 }
@@ -85,11 +91,22 @@ h4{
   flex-direction:column;
   align-items: center;
   justify-content:center;
-  padding:30px;
-   border-style:solid;
+  /* padding:30px; */
+  row-gap: 40px;
+
  
  
 }
+
+.pfp{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:center;
+  column-gap: 20px;
+}
+
+
 li {
   float: left;
 }
@@ -120,6 +137,7 @@ label{
 .dog{
   max-width:300px;
    margin-left:50px;
+   margin-top: 30px;
 
 }
 img{
@@ -128,10 +146,100 @@ img{
   float:left;
  
 }
+
+
+
+
 footer{
   position: fixed;
   left: 0;
   bottom: 0;
   background-color: #F6FBFE;
   width:100%;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET  */
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+  html, body {
+    height: 100%;
+    width: 100%;
+    font: #000;
+    background-color: #F6FBFE;
+    margin: 0 auto; 
+  
+  }
+
+  header{
+    height:5%;
+      background-color: #263127;
+    }
+
+  .hero{
+    display:flex;
+     flex-direction:rows;
+       align-items: center;
+     justify-content: center;
+      column-gap: 2em;
+     background-color: #263127;
+     font-family: 'Bebas Neue', cursive;
+     color:#E4986D;
+     border: none;
+     width:100%;
+}
+}
+/* MODERN MOBILE */
+@media all and (min-width: 480px) and (max-width: 768px) { 
+  html, body {
+    height: 100%;
+    width: 100%;
+    font: #000;
+    background-color: #F6FBFE;
+    margin: 0 auto; 
+    display:flex;
+    flex-direction:column;
+      align-items: center;
+    justify-content: center;
+
+
+}.hero{
+  display:flex;
+   flex-direction:column;
+     align-items: center;
+   justify-content: center;
+    column-gap: 2em;
+   background-color: #263127;
+   font-family: 'Bebas Neue', cursive;
+   color:#E4986D;
+   border: none;
+   width:100%;
+  }
+}
+
+/* SMALLER MOBILE  */
+@media all and (max-width: 480px) { 
+  html, body {
+    height: 100%;
+    width: 100%;
+    font: #000;
+    background-color: #F6FBFE;
+    margin: 0 auto; 
+      display:flex;
+   flex-direction:column;
+     align-items: center;
+   justify-content: center;
+}
+.hero{
+  display:flex;
+   flex-direction:rows;
+     align-items: center;
+   justify-content: center;
+    column-gap: 2em;
+   background-color: #263127;
+   font-family: 'Bebas Neue', cursive;
+   color:#E4986D;
+   border: none;
+   width:100%;
+}
 }
